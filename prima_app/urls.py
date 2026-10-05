@@ -3,10 +3,10 @@ from prima_app.views import index, home, welcome, menu, chisiamo, variabili
 
 app_name="prima_app"
 urlpatterns=[
-    path('', home, name='home'),
+    path('home', home, name='home'),
     path('welcome',welcome, name='welcome'),
     path('menu', menu, name='menu'),
     path('chisiamo', chisiamo, name='chisiamo'),
     path('variabili', variabili, name='variabili'),
-    path('index', index, name='index'),
+    path('', index, name='index'),
 ]
