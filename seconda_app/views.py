@@ -6,3 +6,9 @@ def esempio_if(request):
            'var2' : 200,
            'var3' : 300 }
     return render(request, "es_if.html", dic)
+
+def if_else_elif(request):
+    dic = { 'var1' : 200,
+           'var2' : 200,
+           'var3' : 300 }
+    return render(request, "if_else_elif.html", dic)
