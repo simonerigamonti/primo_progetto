@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{%block title%} {{block.super}} | Index {%endblock title%}
+
+{%block content%}
+    <ol>
+        <li><a href="/">index root</a></li>
+        <li><a href="{% url 'prova_pratica_1:view_a'%}">Somma</a></li>
+        <li><a href="{% url 'prova_pratica_1:view_b'%}">Media</a></li>
+        <li><a href="{% url 'prova_pratica_1:view_c'%}">Voti</a></li>
+    </ol>
+{%endblock content%}

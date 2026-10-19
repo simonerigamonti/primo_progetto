@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{%block title%} {{block.super}} | Index {%endblock title%}
+
+{%block content%}
+    
+    <p>Numero 1: <span style="color: {{ colore_a }};">{{ a }}</span></p>
+    <p>Numero 2: <span style="color: {{ colore_b }};">{{ b }}</span></p>
+    <p>La somma è: {{ somma }} </p>
+
+
+{%endblock content%}
